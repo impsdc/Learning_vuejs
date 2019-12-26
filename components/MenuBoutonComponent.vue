@@ -28,12 +28,13 @@ export default {
         icon:String,
         redirection:String,
         chemin:String,
+        visible: {visible:Boolean, default: false }
     },
-    data() {
-        return {
-            visible: true
-        }
-    },
+    // data() {
+    //     return {
+    //         visible: true
+    //     }
+    // },
     methods: {
         hoverIn() {
             this.visible = true
