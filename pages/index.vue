@@ -3,29 +3,27 @@
     <CardComponent :card="title_card">
         <template slot="action">
           <actionComponent
-           button="true" 
-           action="redirection" 
-           filename="folder" > 
-          </actionComponent> 
+           button="true"
+           action="redirection"
+           filename="folder" >
+          </actionComponent>
         </template>
       <div slot="content">
-        <img src="../assets/folder.svg" alt="icon_folder"> 
+        <img src="../assets/folder.svg" alt="icon_folder">
       </div>
     </CardComponent>
-    <MenuBoutonComponent 
-      chemin="profil" 
-      class="mt-3" 
-      rounded="true" 
+    <MenuBoutonComponent
+      chemin="profil"
+      class="mt-3"
+      rounded="true"
       color="#65b9fc">
         <template slot="icon">
           <img class="z-100" src="../assets/home.svg">
         </template>
         <template
-          slot="title" 
-          color="#65b9fc">
+          slot="title">
           {{redirection}}
         </template>
-
     </MenuBoutonComponent>
  </div>
 
